@@ -6,19 +6,6 @@ public class Speedometer : MonoBehaviour {
 
     public Obstacle MainObstacle;
 
-    private int score;
-
-    public int Score
-    {
-        get { return score; }
-        set
-        {
-            score = value;
-            Manager.I.SetScore(score);
-        }
-    }
-
-
     int count;
     int Count
     {
@@ -45,7 +32,7 @@ public class Speedometer : MonoBehaviour {
         if(other.tag == "Speedometer")
         {
             Count++;
-            Score++;
+            Manager.I.Score++;
         }
     }
 }

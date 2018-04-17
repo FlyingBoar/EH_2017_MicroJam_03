@@ -242,7 +242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainObstacle: {fileID: 550356366}
-  Mng: {fileID: 1354008101}
 --- !u!54 &64492350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -305,7 +304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Mng: {fileID: 1354008101}
 --- !u!23 &505852088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1063,7 +1061,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nome Gioco
+  m_Text: Circle
 --- !u!222 &1147907330
 CanvasRenderer:
   m_ObjectHideFlags: 0

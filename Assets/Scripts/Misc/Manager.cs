@@ -12,8 +12,20 @@ public class Manager : MonoBehaviour {
 
     public static Manager I;
 
-	// Use this for initialization
-	void Start () {
+    private int score;
+
+    public int Score
+    {
+        get { return score; }
+        set
+        {
+            score = value;
+            SetScore(score);
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         if (I == null)
             I = this;
         else
