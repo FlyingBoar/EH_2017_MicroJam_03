@@ -10,8 +10,14 @@ public class Manager : MonoBehaviour {
 
     public Text ScoreText;
 
+    public static Manager I;
+
 	// Use this for initialization
 	void Start () {
+        if (I == null)
+            I = this;
+        else
+            DestroyImmediate(gameObject);
         Time.timeScale = 0;
 	}
 

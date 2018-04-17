@@ -6,7 +6,6 @@ public class Player : MonoBehaviour {
 
     Rigidbody rigid;
     public float Speed;
-    public Manager Mng;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +27,7 @@ public class Player : MonoBehaviour {
     {
         if(other.tag == "Obstacle")
         {
-            Mng.GameOver();
+            Manager.I.GameOver();
         }
     }
 }

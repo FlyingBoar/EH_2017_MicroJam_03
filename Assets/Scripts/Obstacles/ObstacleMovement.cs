@@ -6,14 +6,9 @@ public class ObstacleMovement : MonoBehaviour {
 
     public bool IsMovingUp;
     public float Speed;
-    Vector3 initialPosition;
 
     float startTimer = 1f;
     float timer;
-    // Use this for initialization
-    void Start () {
-        initialPosition = transform.position;
-    }
 	
 	// Update is called once per frame
 	void Update () {

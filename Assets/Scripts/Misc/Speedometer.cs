@@ -5,7 +5,6 @@ using UnityEngine;
 public class Speedometer : MonoBehaviour {
 
     public Obstacle MainObstacle;
-    public Manager Mng;
 
     private int score;
 
@@ -15,7 +14,7 @@ public class Speedometer : MonoBehaviour {
         set
         {
             score = value;
-            Mng.SetScore(score);
+            Manager.I.SetScore(score);
         }
     }
 
